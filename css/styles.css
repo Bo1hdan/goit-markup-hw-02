@@ -3,81 +3,79 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.33;
-  /* identical to box height, or 150% */
 
   letter-spacing: 0.02em;
 
-  /* SLATE */
-
-  color: #434455;
+  color: var(--textColor);
+}
+:root {
+  --bgColor: #4d5ae5;
+  --mainColor: #2e2f42;
+  --textColor: #434455;
+  --white: #ffffff;
+  --accent: #404bbf;
+  --secondary: #f4f4fd;
+  --footerText: #e7e9fc;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 .logo {
   font-family: 'Raleway';
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.5;
-  /* identical to box height, or 133% */
 
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  /* NAVY BLUE */
-
-  color: #2e2f42;
+  color: var(--mainColor);
 }
 .logo-span {
   font-family: 'Raleway';
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.5;
-  /* identical to box height, or 133% */
 
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  /* IRIS */
-
-  color: #4d5ae5;
+  color: var(--bgColor);
 }
 
 .nav-link {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  /* identical to box height, or 150% */
 
   letter-spacing: 0.02em;
 
-  /* NAVY BLUE */
-
-  color: #2e2f42;
+  color: var(--mainColor);
+}
+.link-accent:hover,
+.link-accent:focus {
+  color: var(--accent);
 }
 .nav-contact {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  /* identical to box height, or 150% */
 
   letter-spacing: 0.02em;
 
-  /* SLATE */
-
-  color: #434455;
+  color: var(--textColor);
 }
 
 .hero-title {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -86,22 +84,45 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
 
-  color: #ffffff;
-  background: #2e2f42;
+  color: var(--white);
+  background: var(--mainColor);
 }
-.hero-btn {
-  /* Button Text */
-
+.btn {
   font-family: 'Roboto';
   font-style: normal;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
 
   letter-spacing: 0.04em;
 
-  color: #ffffff;
-  background: #4d5ae5;
+  color: var(--white);
+  background: var(--bgColor);
+}
+.btn:hover {
+  color: var(--white);
+  background-color: var(--accent);
+  cursor: pointer;
+}
+.btn-filter {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.04em;
+
+  color: var(--bgColor);
+  background: var(--secondary);
+  cursor: pointer;
+}
+.btn-filter:hover,
+.btn-filter:focus {
+  color: var(--white);
+  background-color: var(--bgColor);
 }
 
 .about-studio {
@@ -110,37 +131,28 @@ body {
 }
 .about-item {
 }
-.item-header {
-  font-family: 'Roboto';
-  font-style: normal;
+.header {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  /* identical to box height, or 120% */
 
   letter-spacing: 0.02em;
 
-  /* NAVY BLUE */
-
-  color: #2e2f42;
+  color: var(--mainColor);
 }
-.about-text {
-  font-family: 'Roboto';
-  font-style: normal;
+.text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  /* or 150% */
 
   letter-spacing: 0.02em;
 
-  /* SLATE */
-
-  color: #434455;
+  color: var(--textColor);
 }
-.products-header {
-  font-family: 'Roboto';
-  font-style: normal;
+.current {
+  color: var(--accent);
+}
+.company-header {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -149,9 +161,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 
-  /* NAVY BLUE */
-
-  color: #2e2f42;
+  color: var(--mainColor);
 }
 .products-list {
 }
@@ -160,50 +170,21 @@ body {
 
 .team {
 }
-.team-header {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  /* identical to box height, or 111% */
 
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-
-  /* NAVY BLUE */
-
-  color: #2e2f42;
-}
 .team-list {
 }
-.team-member {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  /* identical to box height, or 120% */
 
-  letter-spacing: 0.02em;
+.logo-footer {
+  font-family: 'Raleway';
 
-  /* NAVY BLUE */
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.16;
 
-  color: #2e2f42;
-}
-.team-member-about {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  /* identical to box height, or 150% */
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 
-  letter-spacing: 0.02em;
-
-  /* SLATE */
-
-  color: #434455;
+  color: var(--secondary);
 }
 .footer-text {
   font-family: 'Roboto';
@@ -217,7 +198,7 @@ body {
 
   /* CORNFLOWER */
 
-  color: #e7e9fc;
+  color: var(--footerText);
 
-  background: #2e2f42;
+  background: var(--mainColor);
 }
