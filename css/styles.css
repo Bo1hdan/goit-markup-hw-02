@@ -1,3 +1,12 @@
+:root {
+  --bgColor: #4d5ae5;
+  --mainColor: #2e2f42;
+  --textColor: #434455;
+  --white: #ffffff;
+  --accent: #404bbf;
+  --secondary: #f4f4fd;
+  --footerText: #e7e9fc;
+}
 body {
   font-family: 'Roboto';
   font-weight: 400;
@@ -8,14 +17,8 @@ body {
 
   color: var(--textColor);
 }
-:root {
-  --bgColor: #4d5ae5;
-  --mainColor: #2e2f42;
-  --textColor: #434455;
-  --white: #ffffff;
-  --accent: #404bbf;
-  --secondary: #f4f4fd;
-  --footerText: #e7e9fc;
+.list {
+  list-style: none;
 }
 .visually-hidden {
   position: absolute;
@@ -66,17 +69,17 @@ body {
   color: var(--accent);
 }
 .nav-contact {
-  font-weight: 400;
+  /* font-family: 'Roboto', sans-serif; */
+  font-style: normal;
   font-size: 16px;
   line-height: 1.5;
-
+  text-decoration: none;
   letter-spacing: 0.02em;
 
   color: var(--textColor);
 }
 
 .hero-title {
-  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   /* or 107% */
@@ -89,7 +92,6 @@ body {
 }
 .btn {
   font-family: 'Roboto';
-  font-style: normal;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -107,7 +109,6 @@ body {
 }
 .btn-filter {
   font-family: 'Roboto';
-  font-style: normal;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -142,7 +143,6 @@ body {
 }
 .text {
   font-weight: 400;
-  font-size: 16px;
   line-height: 1.5;
 
   letter-spacing: 0.02em;
@@ -153,7 +153,6 @@ body {
   color: var(--accent);
 }
 .company-header {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   /* identical to box height, or 111% */
@@ -176,7 +175,6 @@ body {
 
 .logo-footer {
   font-family: 'Raleway';
-
   font-weight: 800;
   font-size: 18px;
   line-height: 1.16;
@@ -187,10 +185,6 @@ body {
   color: var(--secondary);
 }
 .footer-text {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 24px;
   /* or 150% */
 
