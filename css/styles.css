@@ -12,9 +12,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.33;
-
   letter-spacing: 0.02em;
-
   color: var(--textColor);
 }
 .list {
@@ -37,10 +35,8 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.5;
-
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   color: var(--mainColor);
 }
 .logo-span {
@@ -48,10 +44,8 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.5;
-
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   color: var(--bgColor);
 }
 
@@ -59,9 +53,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-
   letter-spacing: 0.02em;
-
   color: var(--mainColor);
 }
 .link-accent:hover,
@@ -69,7 +61,6 @@ body {
   color: var(--accent);
 }
 .nav-contact {
-  /* font-family: 'Roboto', sans-serif; */
   font-style: normal;
   font-size: 16px;
   line-height: 1.5;
@@ -82,11 +73,8 @@ body {
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
-  /* or 107% */
-
   text-align: center;
   letter-spacing: 0.02em;
-
   color: var(--white);
   background: var(--mainColor);
 }
@@ -96,9 +84,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-
   letter-spacing: 0.04em;
-
   color: var(--white);
   background: var(--bgColor);
 }
@@ -113,9 +99,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-
   letter-spacing: 0.04em;
-
   color: var(--bgColor);
   background: var(--secondary);
   cursor: pointer;
@@ -136,17 +120,13 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-
   letter-spacing: 0.02em;
-
   color: var(--mainColor);
 }
 .text {
   font-weight: 400;
   line-height: 1.5;
-
   letter-spacing: 0.02em;
-
   color: var(--textColor);
 }
 .current {
@@ -155,8 +135,6 @@ body {
 .company-header {
   font-size: 36px;
   line-height: 1.11;
-  /* identical to box height, or 111% */
-
   letter-spacing: 0.02em;
   text-transform: capitalize;
 
@@ -178,7 +156,6 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.16;
-
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
@@ -186,13 +163,7 @@ body {
 }
 .footer-text {
   line-height: 24px;
-  /* or 150% */
-
   letter-spacing: 0.02em;
-
-  /* CORNFLOWER */
-
   color: var(--footerText);
-
   background: var(--mainColor);
 }
