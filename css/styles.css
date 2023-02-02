@@ -164,9 +164,8 @@ p {
 .btn-list {
   display: flex;
   justify-content: center;
-  /* gap: 24px; */
-  row-gap: 24px;
-  column-gap: 48px;
+  gap: 24px;
+
   padding-bottom: 72px;
 }
 
